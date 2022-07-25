@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   background-color: #fff;
   margin-bottom: 50px;
   border-radius: 8px;
@@ -10,7 +11,11 @@ export const ProfileCard = styled.div`
 `;
 
 export const Description = styled.div`
-  padding: 50px;
+  padding: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -26,9 +31,13 @@ export const Avatar = styled.img`
 
 export const Username = styled.p`
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 28px;
   font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
 export const Tag = styled.p`
